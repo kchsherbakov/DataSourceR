@@ -6,13 +6,9 @@
 
     <depends>com.intellij.modules.platform</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.kchsherbakov.datasourcer.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.kchsherbakov.datasourcer.services.MyProjectService"/>
+    <extensions defaultExtensionNs="com.intellij">=
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.kchsherbakov.datasourcer.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
 </idea-plugin>
